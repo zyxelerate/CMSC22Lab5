@@ -22,6 +22,9 @@ public class Account{
   }
   
   public void setBalance(double balance){
+    if (balance < 0.0){
+      throw new IllegalArgumentException("Balance cannot be less than 0.00");
+    }
     this.balance = balance;
   }
   
