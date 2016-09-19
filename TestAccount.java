@@ -11,18 +11,18 @@ public class TestAccount{
     System.out.println(a2);
     
     //Testing getAccountNumber() and getBalance()
-    System.out.println("Account number of a1:" + a1.getAccountNumber());
-    System.out.println("Balance of a1:" + a1.getBalance());
-    System.out.println("Account number of a2:" + a2.getAccountNumber());
-    System.out.println("Balance of a2:" + a2.getBalance());
+    System.out.println("Account number of a1: " + a1.getAccountNumber());
+    System.out.printf("Balance of a1: %.02f\n", a1.getBalance());
+    System.out.println("Account number of a2: " + a2.getAccountNumber());
+    System.out.printf("Balance of a2: %.02f\n", a2.getBalance());
     
     //Testing credit() and debit()
-    System.out.println("Before credit: " + a1.getBalance());
+    System.out.printf("Before credit: %.02f\n", a1.getBalance());
     a1.credit(200.00);
-    System.out.println("After credit: " + a1.getBalance());
+    System.out.printf("After credit: %.02f\n", a1.getBalance());
     
-    System.out.println("Before debit: " + a2.getBalance());
+    System.out.printf("Before debit: %.02f\n", a2.getBalance());
     a2.debit(10.00);
-    System.out.println("After debit: " + a2.getBalance());
+    System.out.printf("After debit: %.02f\n", a2.getBalance());
   }
 }
