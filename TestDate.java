@@ -20,5 +20,8 @@ public class TestDate {
       System.out.println(d2);
       Date d3 = new Date();
       System.out.println(d3);
+      //Test for invalid dates
+      Date d4 = new Date(2015, 2, 29);
+      System.out.println(d4);
    }
 }
