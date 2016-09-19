@@ -24,5 +24,9 @@ public class TestAccount{
     System.out.printf("Before debit: %.02f\n", a2.getBalance());
     a2.debit(10.00);
     System.out.printf("After debit: %.02f\n", a2.getBalance());
+    
+    //Testing if exception works
+    Account a3 = new Account(789, -100.00);
+    System.out.println(a3);
   }
 }
