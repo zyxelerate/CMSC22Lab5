@@ -34,6 +34,9 @@ public class Account{
   
   public void debit(double amount){
     this.balance -= amount;
+    if (this.balance < 0.0){
+      throw new IllegalArgumentException("Balance after debit cannot be less than 0.00");
+    }
   }
   
   public String toString(){
