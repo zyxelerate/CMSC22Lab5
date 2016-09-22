@@ -5,12 +5,11 @@ public class Account{
   
   public Account(int accountNumber, double balance){
     this.accountNumber = accountNumber;
-    setBalance(balance);
+    this.balance = (balance)
   }
   
   public Account(int accountNumber){
-    this.accountNumber = accountNumber;
-    setBalance(balance); 
+    this(accountNumber, 0.0); 
   }
   
   public int getAccountNumber(){
